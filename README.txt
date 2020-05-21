@@ -1,0 +1,5 @@
+Endpoint URL:
+http://image-filter-starter-code-dev2222.ap-south-1.elasticbeanstalk.com/
+
+Github URL:
+https://github.com/rajan98/udacityCloudProjectUdagram
