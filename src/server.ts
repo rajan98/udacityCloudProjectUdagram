@@ -31,11 +31,13 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
   app.get("/filteredimage", async (req, res) => {
     const { image_url } = req.query;
+
     if (!image_url.trim()) {
-      res.status(500).send(
-        "Please Enter a valid image url in the query like ?img_url=http://example/example.jpg"
+      res.status(400).send(
+        "Incorrect Image Request"
       );
     }
+
     else {
       filterImageFromURL(encodeURI(image_url)).then(
         (path) => {
